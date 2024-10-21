@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px; /* Espacio adicional debajo del título */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para mejor alineación */
+    align-items: center; /* Centra los elementos */
+    margin-bottom: 20px;
+}
+
+#usernameInput, #messageInput {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espacio entre los campos */
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transición suave al hover */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#messagesContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.message {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    position: relative; /* Posicionamiento relativo para el pseudo-elemento */
+}
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.message strong {
+    color: #4CAF50; /* Color del nombre de usuario */
+}
+
+/* Estilo para el aviso de nuevos mensajes */
+.aria-notification {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e7f3fe;
+    color: #31708f;
+    padding: 10px;
+    border: 1px solid #bce8f1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    z-index: 1;
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s forwards; /* Animación de aparición y desaparición */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Visitas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a nuestro Libro de Visitas</h1>
+    </header>
+    <main>
+        <form id="messageForm" aria-label="Formulario de mensajes">
+            <input 
+                type="text" 
+                id="usernameInput" 
+                placeholder="Tu nombre" 
+                required 
+                aria-required="true">
+            <input 
+                type="text" 
+                id="messageInput" 
+                placeholder="Escribe tu mensaje aquí" 
+                required 
+                aria-required="true">
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="messagesContainer" aria-live="polite"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Libro de Visitas. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
